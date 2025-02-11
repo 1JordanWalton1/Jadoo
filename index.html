@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Jadoo</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="css/style.min.css?_v=20250211191455">
+	<link rel="shortcut icon" href="favicon.ico">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+
+				<!-- Logo and Homepage Link -->
+				<div class="header__elem">
+					<a href="#!" class="header__logo" aria-label="Homepage">
+						<svg width="116" height="35" viewBox="0 0 116 35" fill="none"
+							xmlns="http://www.w3.org/2000/svg">
+							<path d="M75 29L84.5 32L92.5 24L102.5 31L113 29L108.5 14.5L92.5 19.5L83.5 14.5L74 16L75 29Z"
+								fill="#F1A501" />
+							<path
+								d="M0.920044 24.064V21.902L7.03804 20.798V23.788C7.06871 25.4133 7.48271 26.64 8.28004 27.468C9.10804 28.2653 10.1967 28.664 11.546 28.664C12.8647 28.664 13.9074 28.2347 14.674 27.376C15.4714 26.5173 15.87 25.3673 15.87 23.926V1.38598H22.218V23.926C22.218 26.9313 21.2214 29.4767 19.228 31.562C17.2347 33.6473 14.6894 34.69 11.592 34.69C8.37204 34.69 5.78071 33.724 3.81804 31.792C1.88604 29.8293 0.920044 27.2533 0.920044 24.064Z"
+								fill="" />
+							<path
+								d="M23.6767 27.836C23.6767 25.904 24.3054 24.3553 25.5627 23.19C26.8201 22.0247 28.4454 21.2887 30.4387 20.982L36.0047 20.154C37.1394 20.0007 37.7067 19.464 37.7067 18.544C37.7067 17.6853 37.3694 16.98 36.6947 16.428C36.0507 15.876 35.1154 15.6 33.8887 15.6C32.6007 15.6 31.5734 15.9527 30.8067 16.658C30.0707 17.3633 29.6567 18.2373 29.5647 19.28L24.1367 18.13C24.3514 16.1673 25.3174 14.4347 27.0347 12.932C28.7521 11.4293 31.0214 10.678 33.8427 10.678C37.2161 10.678 39.7001 11.4907 41.2947 13.116C42.8894 14.7107 43.6867 16.7653 43.6867 19.28V30.412C43.6867 31.7613 43.7787 32.9573 43.9627 34H38.3507C38.1974 33.3253 38.1207 32.4207 38.1207 31.286C36.6794 33.5247 34.4561 34.644 31.4507 34.644C29.1201 34.644 27.2341 33.9693 25.7927 32.62C24.3821 31.2707 23.6767 29.676 23.6767 27.836ZM32.7387 30.09C34.1801 30.09 35.3607 29.6913 36.2807 28.894C37.2314 28.066 37.7067 26.7167 37.7067 24.846V23.834L32.6007 24.616C30.7301 24.892 29.7947 25.8427 29.7947 27.468C29.7947 28.204 30.0554 28.8327 30.5767 29.354C31.0981 29.8447 31.8187 30.09 32.7387 30.09Z"
+								fill="" />
+							<path
+								d="M67.6578 0.695984V29.906C67.6578 31.4087 67.7191 32.7733 67.8418 34H61.9998C61.8464 33.2333 61.7698 32.3593 61.7698 31.378C61.2484 32.3287 60.4204 33.0953 59.2858 33.678C58.1818 34.2607 56.8938 34.552 55.4218 34.552C52.2018 34.552 49.5491 33.4327 47.4638 31.194C45.4091 28.9247 44.3818 26.0727 44.3818 22.638C44.3818 19.2953 45.3938 16.4893 47.4178 14.22C49.4724 11.9507 52.0791 10.816 55.2378 10.816C58.4884 10.816 60.6198 11.7513 61.6318 13.622V0.695984H67.6578ZM50.5458 22.638C50.5458 24.6313 51.0671 26.2107 52.1098 27.376C53.1524 28.5107 54.5018 29.078 56.1578 29.078C57.7831 29.078 59.1171 28.4953 60.1598 27.33C61.2024 26.1647 61.7238 24.5853 61.7238 22.592C61.7238 20.6293 61.2024 19.096 60.1598 17.992C59.1171 16.8573 57.7831 16.29 56.1578 16.29C54.5324 16.29 53.1831 16.8573 52.1098 17.992C51.0671 19.1267 50.5458 20.6753 50.5458 22.638Z"
+								fill="" />
+							<path
+								d="M76.6867 27.422C77.8214 28.5567 79.1861 29.124 80.7807 29.124C82.3754 29.124 83.7247 28.5567 84.8287 27.422C85.9634 26.2873 86.5307 24.708 86.5307 22.684C86.5307 20.66 85.9634 19.0807 84.8287 17.946C83.7247 16.8113 82.3754 16.244 80.7807 16.244C79.1861 16.244 77.8214 16.8113 76.6867 17.946C75.5827 19.0807 75.0307 20.66 75.0307 22.684C75.0307 24.708 75.5827 26.2873 76.6867 27.422ZM72.2707 14.082C74.54 11.8127 77.3767 10.678 80.7807 10.678C84.1847 10.678 87.0061 11.8127 89.2447 14.082C91.514 16.3513 92.6487 19.2187 92.6487 22.684C92.6487 26.1493 91.514 29.0167 89.2447 31.286C87.0061 33.5553 84.1847 34.69 80.7807 34.69C77.3767 34.69 74.54 33.5553 72.2707 31.286C70.032 29.0167 68.9127 26.1493 68.9127 22.684C68.9127 19.2187 70.032 16.3513 72.2707 14.082Z"
+								fill="" />
+							<path
+								d="M99.87 27.422C101.005 28.5567 102.369 29.124 103.964 29.124C105.559 29.124 106.908 28.5567 108.012 27.422C109.147 26.2873 109.714 24.708 109.714 22.684C109.714 20.66 109.147 19.0807 108.012 17.946C106.908 16.8113 105.559 16.244 103.964 16.244C102.369 16.244 101.005 16.8113 99.87 17.946C98.766 19.0807 98.214 20.66 98.214 22.684C98.214 24.708 98.766 26.2873 99.87 27.422ZM95.454 14.082C97.7233 11.8127 100.56 10.678 103.964 10.678C107.368 10.678 110.189 11.8127 112.428 14.082C114.697 16.3513 115.832 19.2187 115.832 22.684C115.832 26.1493 114.697 29.0167 112.428 31.286C110.189 33.5553 107.368 34.69 103.964 34.69C100.56 34.69 97.7233 33.5553 95.454 31.286C93.2153 29.0167 92.096 26.1493 92.096 22.684C92.096 19.2187 93.2153 16.3513 95.454 14.082Z"
+								fill="" />
+						</svg>
+					</a>
+				</div>
+
+				<!-- Navigation Menu -->
+				<div class="header__menu menu">
+					<nav class="menu__body" aria-label="Main navigation">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="#!" class="menu__link">Desitnations</a></li>
+							<li class="menu__item"><a href="#!" class="menu__link">Hotels</a></li>
+							<li class="menu__item"><a href="#!" class="menu__link">Flights</a></li>
+							<li class="menu__item"><a href="#!" class="menu__link">Bookings</a></li>
+						</ul>
+					</nav>
+				</div>
+
+				<!-- Header Actions: Login, Signup, Language Selector, Mobile Menu -->
+				<div class="header__actions">
+					<button class="header__btn-login" type="button" data-da=".menu__list,479.98,15">Login</button>
+					<button class="header__btn-signup" type="button" data-da=".menu__list,479.98,16">Sign up</button>
+					<!-- Language Selector -->
+					<div class="header__lang lang-selector">
+						<button class="lang-selector__btn" aria-haspopup="true" aria-expanded="false">
+							<span class="lang-selector__current-lang _icon-arrow-lang">EN</span>
+						</button>
+						<ul class="lang-selector__dropdown" aria-label="Language options" role="menu">
+							<li class="lang-selector__dropdown-item" role="menuitem">
+								<a href="#!" class="lang-selector__option" data-lang="en">EN</a>
+							</li>
+							<li class="lang-selector__dropdown-item" role="menuitem">
+								<a href="#!" class="lang-selector__option" data-lang="de">DE</a>
+							</li>
+							<li class="lang-selector__dropdown-item" role="menuitem">
+								<a href="#!" class="lang-selector__option" data-lang="fr">FR</a>
+							</li>
+						</ul>
+					</div>
+					<!-- Mobile Menu Button -->
+					<button type="button" class="icon-menu" aria-label="Toggle menu"><span></span></button>
+				</div>
+
+			</div>
+		</header>
+		<main class="page">
+
+			<section class="hero" aria-labelledby="hero-title" data-watch>
+				<div class="hero__container">
+					<div class="hero__inner">
+						<div class="hero__descr" id="hero-description">
+							Best Destinations around the world
+						</div>
+						<h1 class="hero__title" id="hero-title">
+							Travel, enjoy and live a new and full life
+						</h1>
+						<div class="hero__text">
+							<p>
+								Built Wicket longer admire do barton vanity itself do in it. Preferred to sportsmen it
+								engrossed listening. Park gate
+								sell they west hard for the.
+							</p>
+						</div>
+						<div class="hero__bottom bottom-hero">
+							<a href="#!" class="bottom-hero__link"
+								aria-label="Find out more about travel destinations">Find out more</a>
+							<button type="button" class="bottom-hero__button" aria-label="Play demo video">
+								<span>Play Demo</span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+			<section class="category" aria-labelledby="category-title">
+				<div class="category__container" data-watch>
+					<div class="text-block text-block_center">
+						<h3 class="text-block__descr">CATEGORY</h3>
+						<h2 class="text-block__title" id="category-title">We Offer Best Services</h2>
+					</div>
+
+					<!-- Example
+
+-->
+					<!-- List of service categories -->
+					<ul class="category__items">
+
+						<!-- Category item: Calculated Weather -->
+						<li class="category__item item-category">
+							<div class="item-category__img">
+								<img src="img/category/01.webp" alt="Calculated weather icon">
+							</div>
+							<h3 class="item-category__title" id="category-item-1">
+								Calculated Weather
+							</h3>
+							<div class="item-category__text">
+								<p>
+									Built Wicket longer admire do barton vanity itself do in it.
+								</p>
+							</div>
+						</li>
+
+						<!-- Category item: Best Flights -->
+						<li class="category__item item-category">
+							<div class="item-category__img">
+								<img src="img/category/02.webp" alt="Best flights icon">
+							</div>
+							<h3 class="item-category__title" id="category-item-2">
+								Best Flights
+							</h3>
+							<div class="item-category__text">
+								<p>
+									Built Wicket longer admire do barton vanity itself do in it.
+								</p>
+							</div>
+						</li>
+
+						<!-- Category item: Local Events -->
+						<li class="category__item item-category">
+							<div class="item-category__img">
+								<img src="img/category/01.webp" alt="Local events icon">
+							</div>
+							<h3 class="item-category__title" id="category-item-3">
+								Local Events
+							</h3>
+							<div class="item-category__text">
+								<p>
+									Built Wicket longer admire do barton vanity itself do in it.
+								</p>
+							</div>
+						</li>
+
+						<!-- Category item: Customization -->
+						<li class="category__item item-category">
+							<div class="item-category__img">
+								<img src="img/category/02.webp" alt="Customization icon">
+							</div>
+							<h3 class="item-category__title" id="category-item-4">
+								Customization
+							</h3>
+							<div class="item-category__text">
+								<p>
+									Built Wicket longer admire do barton vanity itself do in it.
+								</p>
+							</div>
+						</li>
+
+					</ul>
+				</div>
+			</section>
+
+
+			<section class="destinations" aria-labelledby="destinations-title">
+				<div class="destinations__container" data-watch>
+					<div class="text-block text-block_center">
+						<h3 class="text-block__descr">Top Selling</h3>
+						<h2 class="text-block__title" id="destinations-title">Top Destinations</h2>
+					</div>
+
+					<!-- Example
+
+-->
+					<!-- List of top destinations -->
+					<ul class="destinations__list">
+
+						<!-- Destination item: Rome -->
+						<li class="destinations__item item-destinations">
+							<a href="#!" class="item-destinations__img" aria-label="View details for Rome, Italy">
+								<img src="img/destinations/rome.webp" alt="Scenic view of Rome, Italy">
+							</a>
+							<div class="item-destinations__bottom">
+								<div class="item-destinations__info">
+									<a href="#!" class="item-destinations__name-link"
+										aria-label="View details for Rome, Italy">Rome, Italy</a>
+									<div class="item-destinations__cost">$5,42k</div>
+								</div>
+								<div class="item-destinations__duration _icon-arrow-up">
+									10 Days Trip
+								</div>
+							</div>
+						</li>
+
+						<!-- Destination item: London -->
+						<li class="destinations__item item-destinations">
+							<a href="#!" class="item-destinations__img" aria-label="View details for London, UK">
+								<img src="img/destinations/london.webp" alt="Scenic view of London, UK">
+							</a>
+							<div class="item-destinations__bottom">
+								<div class="item-destinations__info">
+									<a href="#!" class="item-destinations__name-link"
+										aria-label="View details for London, UK">London, UK</a>
+									<div class="item-destinations__cost">$4,2k</div>
+								</div>
+								<div class="item-destinations__duration _icon-arrow-up">
+									12 Days Trip
+								</div>
+							</div>
+						</li>
+
+						<!-- Destination item: Europe -->
+						<li class="destinations__item item-destinations">
+							<a href="#!" class="item-destinations__img" aria-label="View details for Full Europe">
+								<img src="img/destinations/europe.webp"
+									alt="Scenic view representing various European destinations">
+							</a>
+							<div class="item-destinations__bottom">
+								<div class="item-destinations__info">
+									<a href="#!" class="item-destinations__name-link"
+										aria-label="View details for Full Europe">Full
+										Europe</a>
+									<div class="item-destinations__cost">$15k</div>
+								</div>
+								<div class="item-destinations__duration _icon-arrow-up">
+									28 Days Trip
+								</div>
+							</div>
+						</li>
+
+					</ul>
+				</div>
+			</section>
+
+
+			<section class="comfort">
+				<div class="comfort__container" data-watch>
+					<div class="comfort__inner">
+						<div class="comfort__main main-comfort">
+							<div class="text-block ">
+								<h3 class="text-block__descr">Easy and Fast</h3>
+								<h2 class="text-block__title">Book your next trip in 3 easy steps</h2>
+							</div>
+
+							<!-- Example
+
+-->
+							<ul class="main-comfort__list">
+								<li class="main-comfort__list-item">
+									<div class="main-comfort__img">
+										<img src="img/comfort/01.svg" alt="Icon for choosing destination">
+									</div>
+									<div class="main-comfort__info">
+										<h2 class="main-comfort__title">Choose Destination</h2>
+										<div class="main-comfort__text">
+											<p>
+												Lorem ipsum dolor sit amet, consectetur
+												adipiscing elit. Urna, tortor tempus.
+											</p>
+										</div>
+									</div>
+								</li>
+								<li class="main-comfort__list-item">
+									<div class="main-comfort__img">
+										<img src="img/comfort/02.svg" alt="Icon for choosing destination">
+									</div>
+									<div class="main-comfort__info">
+										<h2 class="main-comfort__title">Choose Destination</h2>
+										<div class="main-comfort__text">
+											<p>
+												Lorem ipsum dolor sit amet, consectetur
+												adipiscing elit. Urna, tortor tempus.
+											</p>
+										</div>
+									</div>
+								</li>
+								<li class="main-comfort__list-item">
+									<div class="main-comfort__img">
+										<img src="img/comfort/03.svg" alt="Icon for choosing destination">
+									</div>
+									<div class="main-comfort__info">
+										<h2 class="main-comfort__title">Choose Destination</h2>
+										<div class="main-comfort__text">
+											<p>
+												Lorem ipsum dolor sit amet, consectetur
+												adipiscing elit. Urna, tortor tempus.
+											</p>
+										</div>
+									</div>
+								</li>
+								<!-- Другие элементы списка -->
+							</ul>
+						</div>
+						<div class="comfort__info-card card-comfort">
+							<div class="card-comfort__inner">
+								<a href="#!" class="card-comfort__img" aria-label="View details for Trip to Greece">
+									<img src="img/comfort/1.webp" alt="Scenic view of Greece">
+								</a>
+								<div class="card-comfort__info">
+									<h4 class="card-comfort__title">
+										<a href="#!" class="card-comfort__link">Trip To Greece</a>
+									</h4>
+									<div class="card-comfort__details">
+										<div class="card-comfort__date">14-29 June
+										</div>
+										<div class="card-comfort__author">
+											by Robbin
+											Joseph</div>
+									</div>
+									<ul class="card-comfort__icons icons-card" aria-label="Trip features">
+										<li class="icons-card__item">
+											<a class="icons-card__item-inner" href="#!" aria-label="Eco-friendly trip">
+												<div class="icons-card__link _icon-leaf"></div>
+											</a>
+										</li>
+										<li class="icons-card__item">
+											<a class="icons-card__item-inner" href="#!" aria-label="Route information">
+												<div class="icons-card__link _icon-way"></div>
+											</a>
+										</li>
+										<li class="icons-card__item">
+											<a class="icons-card__item-inner" href="#!"
+												aria-label="Send trip information">
+												<div class="icons-card__link _icon-send"></div>
+											</a>
+										</li>
+									</ul>
+									<div class="card-comfort__bottom">
+										<div class="card-comfort__quantity _icon-building">
+											24 people going
+										</div>
+										<button class="card-comfort__like _icon-heart" type="button" id="heartButton"
+											aria-label="Like this trip">
+											<svg width="18" height="18" viewBox="0 0 20 20" fill="#4152CA"
+												xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd" clip-rule="evenodd"
+													d="M10.0015 2.82698L10.3546 2.45386C11.3906 1.34173 12.8417 0.709395 14.3617 0.707636C15.8804 0.709981 17.33 1.34265 18.3644 2.45457C20.5452 4.80665 20.5452 8.44187 18.3645 10.794L10.5204 19.069C10.5115 19.0784 10.5024 19.0875 10.493 19.0964C10.2064 19.3679 9.75403 19.3556 9.48255 19.069L1.63565 10.794C-0.545218 8.44162 -0.545218 4.80619 1.63565 2.45386C1.72679 2.35577 1.82148 2.26112 1.91953 2.16998C4.13215 0.114128 7.59251 0.241198 9.64836 2.45386L10.0015 2.82698Z"
+													fill="#4152CA" />
+											</svg>
+										</button>
+										<div class="card-comfort__window window-card" id="infoBlock" aria-live="polite"
+											aria-atomic="true">
+											<div class="window-card__img">
+												<img src="img/comfort/01.webp" alt="Ongoing trip to Rome">
+											</div>
+											<div class="window-card__info">
+												<div class="window-card__top">
+													<div class="window-card__status">Ongoing</div>
+													<h5 class="window-card__title">Trip to Rome</h5>
+												</div>
+												<div class="window-card__bottom">
+													<div class="window-card__percent">40% <span>completed</span></div>
+													<div class="window-card__stripe" role="progressbar"
+														aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
+														aria-label="Progress: 40% completed">
+														<div class="window-card__stripe-fill"></div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="testimonials" aria-labelledby="testimonials-title">
+				<div class="testimonials__container" data-watch>
+					<div class="testimonials__inner">
+						<div class="testimonials__info">
+							<div class="text-block ">
+								<h3 class="text-block__descr">Testimonials</h3>
+								<h2 class="text-block__title" id="testimonials-title">What people say about Us.</h2>
+							</div>
+
+							<!-- Example
+
+-->
+						</div>
+
+						<!-- Testimonial carousel -->
+						<div class="testimonials__carousel carousel">
+							<div class="carousel__slider" id="card_slider" role="region" aria-roledescription="carousel"
+								aria-label="Customer testimonials">
+								<!-- Slider Item 1 -->
+								<div class="carousel__slider-item" role="group" aria-roledescription="slide">
+									<div class="carousel__image">
+										<img src="img/testimonials/ava.webp" alt="Portrait of Bobr Taylor">
+									</div>
+									<div class="carousel__info">
+										<div class="carousel__text">
+											<p>
+												"On the Windows talking painted pasture yet its express parties use.
+												Sure last upon he same as knew next. Of believed or
+												diverted no."
+											</p>
+										</div>
+										<div class="carousel__details">
+											<div class="carousel__author">Bobr Taylor</div>
+											<div class="carousel__detail">Lahore, Pakistan</div>
+										</div>
+									</div>
+								</div>
+
+								<!-- Slider Item 2 -->
+								<div class="carousel__slider-item" role="group" aria-roledescription="slide">
+									<div class="carousel__image">
+										<img src="img/testimonials/ava.webp" alt="Portrait of Lobr Taylor">
+									</div>
+									<div class="carousel__info">
+										<div class="carousel__text">
+											<p>
+												"On the Windows talking painted pasture yet its express parties use.
+												Sure last upon he same as knew next. Of believed or
+												diverted no."
+											</p>
+										</div>
+										<div class="carousel__details">
+											<div class="carousel__author">Lobr Taylor</div>
+											<div class="carousel__detail">Lahore, Pakistan</div>
+										</div>
+									</div>
+								</div>
+
+								<!-- Slider Item 3 -->
+								<div class="carousel__slider-item" role="group" aria-roledescription="slide">
+									<div class="carousel__image">
+										<img src="img/testimonials/ava.webp" alt="Portrait of Bastian Taylor">
+									</div>
+									<div class="carousel__info">
+										<div class="carousel__text">
+											<p>
+												"On the Windows talking painted pasture yet its express parties use.
+												Sure last upon he same as knew next. Of believed or
+												diverted no."
+											</p>
+										</div>
+										<div class="carousel__details">
+											<div class="carousel__author">Bastian Taylor</div>
+											<div class="carousel__detail">Lahore, Pakistan</div>
+										</div>
+									</div>
+								</div>
+
+								<!-- Slider Item 4 -->
+								<div class="carousel__slider-item" role="group" aria-roledescription="slide">
+									<div class="carousel__image">
+										<img src="img/testimonials/ava.webp" alt="Portrait of Lawyer Taylor">
+									</div>
+									<div class="carousel__info">
+										<div class="carousel__text">
+											<p>
+												"On the Windows talking painted pasture yet its express parties use.
+												Sure last upon he same as knew next. Of believed or
+												diverted no."
+											</p>
+										</div>
+										<div class="carousel__details">
+											<div class="carousel__author">Lawyer Taylor</div>
+											<div class="carousel__detail">Lahore, Pakistan</div>
+										</div>
+									</div>
+								</div>
+
+								<!-- Slider Item 5 -->
+								<div class="carousel__slider-item" role="group" aria-roledescription="slide">
+									<div class="carousel__image">
+										<img src="img/testimonials/ava.webp" alt="Portrait of Ayeyee Taylor">
+									</div>
+									<div class="carousel__info">
+										<div class="carousel__text">
+											<p>
+												"On the Windows talking painted pasture yet its express parties use.
+												Sure last upon he same as knew next. Of believed or
+												diverted no."
+											</p>
+										</div>
+										<div class="carousel__details">
+											<div class="carousel__author">Ayeyee Taylor</div>
+											<div class="carousel__detail">Lahore, Pakistan</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="partners" aria-label="Our Partners">
+				<div class="partners__container" data-watch>
+					<!-- List of partner logos -->
+					<ul class="partners__list">
+						<li class="partners__list-item">
+							<div class="partners__icon">
+								<img src="img/partners/01.webp" alt="Partner logo 1">
+							</div>
+						</li>
+						<li class="partners__list-item">
+							<div class="partners__icon">
+								<img src="img/partners/02.webp" alt="Partner logo 2">
+							</div>
+						</li>
+						<li class="partners__list-item">
+							<div class="partners__icon">
+								<img src="img/partners/03.webp" alt="Partner logo 3">
+							</div>
+						</li>
+						<li class="partners__list-item">
+							<div class="partners__icon">
+								<img src="img/partners/04.webp" alt="Partner logo 4">
+							</div>
+						</li>
+						<li class="partners__list-item">
+							<div class="partners__icon">
+								<img src="img/partners/05.webp" alt="Partner logo 5">
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<section class="subscribe" aria-labelledby="subscribe-title" data-watch>
+				<div class="subscribe__container">
+					<div class="subscribe__inner">
+						<div class="subscribe__decor" aria-hidden="true">
+							<img src="img/subscribe/decor-tg.svg" alt="">
+						</div>
+						<h3 class="subscribe__title" id="subscribe-title">
+							Subscribe to get information, latest news and other
+							interesting offers about Jadoo
+						</h3>
+						<form class="subscribe__form form-subscribe" aria-labelledby="subscribe-title">
+							<div class="form-subscribe__item">
+								<label for="inputSub" class="visually-hidden">Your email</label>
+								<input id="inputSub" autocomplete="email" type="email" placeholder="Your email"
+									class="form-subscribe__input" required aria-required="true">
+							</div>
+							<button type="submit" class="form-subscribe__btn">Subscribe</button>
+						</form>
+					</div>
+				</div>
+			</section>
+
+		</main>
+		<footer class="footer" aria-label="Website Footer">
+			<div class="footer__top">
+				<div class="footer__container footer__container-special">
+					<div class="footer__logo">
+						<a href="#!" class="footer__logo-link" aria-label="Homepage">
+							<svg width="149" height="34" viewBox="0 0 149 34" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M13.916 24.464C13.916 27.016 12.64 28.864 9.956 28.864C7.272 28.864 6.04 27.016 5.996 24.464H0.936C0.936 30.008 4.676 33.308 9.956 33.308C15.236 33.308 18.976 30.008 18.976 24.464V2.42H13.916V24.464ZM25.4639 20.768C25.4639 28.248 30.5239 33.396 36.8159 33.396C40.8639 33.396 43.7679 31.46 45.3079 29.392V33H50.3679V8.756H45.3079V12.276C43.8119 10.296 40.9959 8.36 36.9039 8.36C30.5239 8.36 25.4639 13.288 25.4639 20.768ZM45.3079 20.856C45.3079 26.092 41.7439 29.04 37.9599 29.04C34.2199 29.04 30.6119 26.004 30.6119 20.768C30.6119 15.532 34.2199 12.716 37.9599 12.716C41.7439 12.716 45.3079 15.664 45.3079 20.856ZM55.2843 20.768C55.2843 28.248 60.3443 33.396 66.7243 33.396C70.6843 33.396 73.5883 31.548 75.1283 29.348V33H80.1883V0.44H75.1283V12.144C73.2803 9.856 69.9363 8.36 66.7683 8.36C60.3443 8.36 55.2843 13.288 55.2843 20.768ZM75.1283 20.856C75.1283 26.092 71.5643 29.04 67.7803 29.04C64.0403 29.04 60.4323 26.004 60.4323 20.768C60.4323 15.532 64.0403 12.716 67.7803 12.716C71.5643 12.716 75.1283 15.664 75.1283 20.856ZM109.877 20.856C109.877 13.244 104.421 8.36 97.5126 8.36C90.6046 8.36 85.1486 13.244 85.1486 20.856C85.1486 28.468 90.3846 33.396 97.2926 33.396C104.245 33.396 109.877 28.468 109.877 20.856ZM90.2526 20.856C90.2526 15.356 93.6406 12.716 97.4246 12.716C101.165 12.716 104.729 15.356 104.729 20.856C104.729 26.356 101.033 29.04 97.2926 29.04C93.5086 29.04 90.2526 26.356 90.2526 20.856ZM137.935 20.856C137.935 13.244 132.479 8.36 125.571 8.36C118.663 8.36 113.207 13.244 113.207 20.856C113.207 28.468 118.443 33.396 125.351 33.396C132.303 33.396 137.935 28.468 137.935 20.856ZM118.311 20.856C118.311 15.356 121.699 12.716 125.483 12.716C129.223 12.716 132.787 15.356 132.787 20.856C132.787 26.356 129.091 29.04 125.351 29.04C121.567 29.04 118.311 26.356 118.311 20.856ZM148.086 30.096C148.086 28.292 146.678 26.884 144.918 26.884C143.114 26.884 141.706 28.292 141.706 30.096C141.706 31.9 143.114 33.308 144.918 33.308C146.678 33.308 148.086 31.9 148.086 30.096Z"
+									fill="#181E4B" />
+							</svg>
+						</a>
+						<div class="footer__logo-descr">
+							Book your trip in minute, get full
+							Control for much longer.
+						</div>
+					</div>
+
+					<div class="footer__column column-footer">
+						<div data-spollers="767.98,max" class="column-footer__spollers">
+							<details class="column-footer__item">
+								<summary class="column-footer__title">Company</summary>
+								<div class="column-footer__body">
+									<ul class="column-footer__list">
+										<li class="column-footer__list-item">
+											<a href="#!" class="column-footer__link">About</a>
+										</li>
+										<li class="column-footer__list-item">
+											<a href="#!" class="column-footer__link">Careers</a>
+										</li>
+										<li class="column-footer__list-item">
+											<a href="#!" class="column-footer__link">Mobile</a>
+										</li>
+									</ul>
+								</div>
+							</details>
+						</div>
+					</div>
+
+					<div class="footer__column column-footer">
+						<div data-spollers="767.98,max" class="column-footer__spollers">
+							<details class="column-footer__item">
+								<summary class="column-footer__title">Contact</summary>
+								<div class="column-footer__body">
+									<ul class="column-footer__list">
+										<li class="column-footer__list-item">
+											<a href="#!" class="column-footer__link">Help/FAQ</a>
+										</li>
+										<li class="column-footer__list-item">
+											<a href="#!" class="column-footer__link">Press</a>
+										</li>
+										<li class="column-footer__list-item">
+											<a href="#!" class="column-footer__link">Affiliates</a>
+										</li>
+									</ul>
+								</div>
+							</details>
+						</div>
+					</div>
+
+					<div class="footer__column column-footer">
+						<div data-spollers="767.98,max" class="column-footer__spollers">
+							<details class="column-footer__item">
+								<summary class="column-footer__title">More</summary>
+								<div class="column-footer__body">
+									<ul class="column-footer__list">
+										<li class="column-footer__list-item">
+											<a href="#!" class="column-footer__link">Airlinefees</a>
+										</li>
+										<li class="column-footer__list-item">
+											<a href="#!" class="column-footer__link">Airline</a>
+										</li>
+										<li class="column-footer__list-item">
+											<a href="#!" class="column-footer__link">Low fare tips</a>
+										</li>
+									</ul>
+								</div>
+							</details>
+						</div>
+					</div>
+
+					<div class="footer__social social-footer">
+						<ul class="social-footer__list" aria-label="Social Media Links">
+							<li class="social-footer__list-item">
+								<a href="#!" class="social-footer__link" aria-label="Facebook">
+									<svg width="" height="" viewBox="0 0 7 13" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M6.10837 2.24446C5.78831 2.14321 5.42023 2.0757 5.08417 2.0757C4.66809 2.0757 3.77191 2.36259 3.77191 2.91948V4.25266H5.90033V6.49712H3.77191V12.6905H1.6275V6.49712H0.571289V4.25266H1.6275V3.12199C1.6275 1.41755 2.36364 0 4.13999 0C4.7481 0 5.83632 0.0337513 6.42843 0.253134L6.10837 2.24446Z"
+											fill="" />
+									</svg>
+								</a>
+							</li>
+							<li class="social-footer__list-item">
+								<a href="#!" class="social-footer__link" aria-label="Instagram">
+									<svg width="" height="" viewBox="0 0 16 16" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M13.6562 0H2.34375C1.05156 0 0 1.05156 0 2.34375V13.6562C0 14.9487 1.05156 16 2.34375 16H13.6562C14.9487 16 16 14.9487 16 13.6562V2.34375C16 1.05156 14.9487 0 13.6562 0ZM15.0625 13.6562C15.0625 14.4316 14.4316 15.0625 13.6562 15.0625H2.34375C1.56844 15.0625 0.9375 14.4316 0.9375 13.6562V2.34375C0.9375 1.56844 1.56844 0.9375 2.34375 0.9375H13.6562C14.4316 0.9375 15.0625 1.56844 15.0625 2.34375V13.6562Z"
+											fill="" />
+										<path
+											d="M13.1562 1.90625C12.6394 1.90625 12.2188 2.32687 12.2188 2.84375C12.2188 3.36063 12.6394 3.78125 13.1562 3.78125C13.6731 3.78125 14.0938 3.36063 14.0938 2.84375C14.0938 2.32687 13.6731 1.90625 13.1562 1.90625Z"
+											fill="" />
+										<path
+											d="M8 3.78125C5.67375 3.78125 3.78125 5.67375 3.78125 8C3.78125 10.3263 5.67375 12.2188 8 12.2188C10.3263 12.2188 12.2188 10.3263 12.2188 8C12.2188 5.67375 10.3263 3.78125 8 3.78125ZM8 11.2812C6.19062 11.2812 4.71875 9.80937 4.71875 8C4.71875 6.19062 6.19062 4.71875 8 4.71875C9.80937 4.71875 11.2812 6.19062 11.2812 8C11.2812 9.80937 9.80937 11.2812 8 11.2812Z"
+											fill="" />
+									</svg>
+								</a>
+							</li>
+							<li class="social-footer__list-item">
+								<a href="#!" class="social-footer__link" aria-label="Twitter">
+									<svg width="" height="" viewBox="0 0 16 13" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M16 1.539C15.405 1.8 14.771 1.973 14.11 2.057C14.79 1.651 15.309 1.013 15.553 0.244C14.919 0.622 14.219 0.889 13.473 1.038C12.871 0.397 12.013 0 11.077 0C9.261 0 7.799 1.474 7.799 3.281C7.799 3.541 7.821 3.791 7.875 4.029C5.148 3.896 2.735 2.589 1.114 0.598C0.831 1.089 0.665 1.651 0.665 2.256C0.665 3.392 1.25 4.399 2.122 4.982C1.595 4.972 1.078 4.819 0.64 4.578C0.64 4.588 0.64 4.601 0.64 4.614C0.64 6.208 1.777 7.532 3.268 7.837C3.001 7.91 2.71 7.945 2.408 7.945C2.198 7.945 1.986 7.933 1.787 7.889C2.212 9.188 3.418 10.143 4.852 10.174C3.736 11.047 2.319 11.573 0.785 11.573C0.516 11.573 0.258 11.561 0 11.528C1.453 12.465 3.175 13 5.032 13C11.068 13 14.368 8 14.368 3.666C14.368 3.521 14.363 3.381 14.356 3.242C15.007 2.78 15.554 2.203 16 1.539Z"
+											fill="" />
+									</svg>
+								</a>
+							</li>
+						</ul>
+
+						<h4 class="social-footer__sub-title">Discover our app</h4>
+						<div class="social-footer__btns">
+							<a href="#!" class="social-footer__btn" aria-label="Download on Google Play">
+								<img src="img/footer/google-play.svg" alt="Google Play Store">
+							</a>
+							<a href="#!" class="social-footer__btn" aria-label="Download on App Store">
+								<img src="img/footer/app-store.svg" alt="Apple App Store">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="footer__bottom">
+				<div class="footer__copy">
+					All rights <a href="mailto:reserved@jadoo.co" aria-label="Contact email">reserved@jadoo.co</a>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js?_v=20250211191455"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js?_v=20250211191455"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/MotionPathPlugin.min.js?_v=20250211191455"></script>
+	<script src="js/app.min.js?_v=20250211191455"></script>
+</body>
+
+</html>
